@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+    
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the survey</p>
+    
+    <form id="survey-form">
+      
+      <div>
+      <label id="name-label" for="name-label">Name:</label>
+        <input
+         type="text" 
+         id="name" 
+         name="name" 
+         placeholder="Enter Your Name" 
+         required/>
+      </div>
+      
+      <div>
+      <label id="email-label" for="email-label">Email:</label>
+        <input
+          placeholder="Enter Your Email"
+          required
+          id="email"
+          type="email"
+          name="email"/>
+      </div>
+      
+      <div>
+        <label id="number-label" for="number-label">Age (optional):</label>
+          <input 
+            placeholder="Age" 
+            type="number" 
+            name="age" 
+            id="number" 
+            min="3" 
+            max="120" />
+      </div>
+
+      <div>
+        <p>Which option best describes your current role?</p>
+
+        <select name="dropdown" id="dropdown">
+          <option value="" disabled selected>Select Current Role</option>
+          <option value="Student">Student</option>
+          <option value="fulltime">Full Time Job</option>
+          <option value="parttime">Part Time Job</option>
+          <option value="prefernot">Prefer Not To Say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <p>Would you recommend me to a friend?</p>
+
+        <label for="yes-option">Yes</label>
+        <input id="yes-option" type="radio" name="recommend" value="yes-option"/>
+        <label for="no-option">No</label>
+        <input id="no-option" type="radio" name="recommend" value="no-option" />
+        <label for="maybe-option">Maybe</label>
+        <input id="maybe-option" type="radio" name="recommend" value="maybe-option"/>
+      </div>
+
+      <div>
+        <p>What would you like to see improved? (Check all that apply)</p>
+
+          <label for="face">Face</label>
+          <input 
+          type="checkbox" 
+          id="face" 
+          name="face" 
+          value="face" 
+          />
+
+          <label for="voice">Voice</label>
+          <input
+            type="checkbox"
+            id="voice"
+            name="voice"
+            value="voice"
+          />
+
+          <label for="jokes">Jokes</label>
+          <input 
+          type="checkbox" 
+          id="jokes" 
+          name="jokes" 
+          value="jokes" 
+          />
+
+          <label for="body">Body</label>
+          <input
+            type="checkbox"
+            id="body"
+            name="body"
+            value="body"
+          />
+
+          <label for="price">Price</label>
+          <input 
+          type="checkbox" 
+          id="price" 
+          name="price" 
+          value="price" 
+          />
+      </div>
+
+      <div>
+        <p>Additional Comments:</p>
+
+        <textarea placeholder="Comment Here" name="comments" id="comments"></textarea>
+        </div>
+
+      <div>
+        <button id="submit" type="submit">Submit</button>
+      </div>
+
+    </form>
+  </body>
+</html>
