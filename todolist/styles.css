@@ -1,0 +1,60 @@
+body {
+  background-color: Steelblue;
+}
+
+.todo-list {
+  font-family: Cursive;
+  list-style-type: none;
+  width: 500px;
+  background-color: CornflowerBlue;
+  padding: 25px;
+  margin: auto;
+}
+
+.todo-list > h1 {
+  text-align: center;
+}
+
+.todo-list > li {
+  background-color: Silver;
+  margin: 25px;
+  height: 75px;
+  list-style-position: outside;
+}
+
+.todo-list > li label {
+  margin-top: 25px;
+}
+.todo-list li input {
+  float: left;
+}
+
+.sub-item {
+  list-style-type: square;
+}
+
+.sub-item-link {
+  text-decoration: none;
+}
+
+.sub-item-link:link {
+  color: black;
+}
+
+.sub-item-link:visited {
+  color: Magenta;
+}
+
+
+
+.sub-item-link:hover {
+  color: MidnightBlue;
+}
+ 
+.sub-item-link:active {
+  color: Aqua;
+}
+
+.sub-item-link:focus {
+  outline: 1px solid black;
+}
